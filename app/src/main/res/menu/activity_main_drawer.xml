@@ -20,6 +20,10 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_playlist_add"
             android:title="Tо Do List" />
+        <item
+            android:id="@+id/nav_recipe"
+            android:icon="@drawable/ic_sentiment_neutral"
+            android:title="Recipe" />
     </group>
 
     <item android:title="Communicate">
