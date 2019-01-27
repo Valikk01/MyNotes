@@ -84,18 +84,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         var intent = Intent(this,ThreeToporsActivity::class.java)
         var in_tent = Intent(this,SettingsActivity::class.java)
-
+        var resipe = Intent(this,Recipes::class.java)
         when (item.itemId) {
             R.id.nav_camera -> {
                 // Handle the camera action
             }
             R.id.nav_gallery -> {
-                startActivity(intent)
+                setContentView(R.layout.activity_three_topors)
             }
             R.id.nav_slideshow -> {
             }
             R.id.nav_manage -> {
 
+            }
+            R.id.nav_recipe -> {
+                startActivity(resipe)
             }
             R.id.nav_share -> {
 
