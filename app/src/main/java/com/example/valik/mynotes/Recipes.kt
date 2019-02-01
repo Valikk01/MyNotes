@@ -13,10 +13,9 @@ class Recipes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipes)
         setSupportActionBar(toolbar)
-        var new_resipe = Intent(this,NewRecipes::class.java)
-
+        var newresipe = Intent(this,NewRecipes::class.java)
         fab.setOnClickListener {
-            startActivity(new_resipe)
+            startActivity(newresipe)
         }
     }
 
