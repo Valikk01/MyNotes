@@ -1,5 +1,6 @@
 package com.example.valik.mynotes
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
@@ -12,10 +13,10 @@ class Recipes : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipes)
         setSupportActionBar(toolbar)
+        var new_resipe = Intent(this,NewRecipes::class.java)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        fab.setOnClickListener {
+            startActivity(new_resipe)
         }
     }
 
